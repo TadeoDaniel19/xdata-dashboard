@@ -12,7 +12,9 @@ const config: Config = {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
         'input-bg': '#FCFDFE',
-        'input-border': '#F0F1F7'
+        'input-border': '#F0F1F7',
+        'primary-blue': '#3751FF',
+        'primary-gray': '#A4A6B3'
       },
     },
   },
