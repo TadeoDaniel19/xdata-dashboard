@@ -1,8 +1,8 @@
 "use client";
 
-import { InputFieldProps } from "@/app/types/general";
-import { useState, InputHTMLAttributes } from "react";
+import { useState } from "react";
 import { HiEye, HiEyeOff } from "react-icons/hi";
+import { InputFieldProps } from "@/types/general";
 
 export function TextField({
   label,

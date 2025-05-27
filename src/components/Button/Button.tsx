@@ -1,5 +1,4 @@
-import React from "react";
-import { ButtonProps } from "@/app/types/general";
+import { ButtonProps } from "@/types/general";
 
 export function Button({
   label,

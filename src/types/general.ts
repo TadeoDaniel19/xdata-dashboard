@@ -1,7 +1,7 @@
-import { loginSchema } from "@/app/schemas/loginSchema";
 import { InputHTMLAttributes } from "react";
 import { Control, FieldError } from 'react-hook-form';
 import { InferType } from "yup";
+import { loginSchema } from "@/schemas/loginSchema";
 
 export type FormValues = InferType<typeof loginSchema>;
 export type Variant = "primary" | "secondary";

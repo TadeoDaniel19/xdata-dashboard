@@ -1,6 +1,6 @@
 "use client";
-import { ControlledInputProps } from "@/app/types/general";
 import { Controller } from "react-hook-form";
+import { ControlledInputProps } from "@/types/general";
 import { TextField } from '../TextField/TextField';
 
 export function RenderTextfield({

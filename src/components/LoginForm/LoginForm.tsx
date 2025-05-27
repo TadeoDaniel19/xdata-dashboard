@@ -2,11 +2,11 @@
 
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { loginSchema } from "@/app/schemas/loginSchema";
 import { Button } from '../Button/Button';
 import { RenderTextfield } from '../RenderTextField/RenderTextfield';
 import Image from "next/image";
-import { FormValues, LoginFormProps } from "@/app/types/general";
+import { loginSchema } from "@/schemas/loginSchema";
+import { FormValues, LoginFormProps } from "@/types/general";
 
 export default function LoginForm({
   onSubmit,
@@ -45,9 +45,9 @@ export default function LoginForm({
         noValidate
         className="space-y-4"
       >
-          <RenderTextfield type='email' control={control} error={errors.email} name='email' placeholder='Email address' label='email' />
+          <RenderTextfield type='email' control={control} error={errors?.email} name='email' placeholder='Email address' label='email' />
         <div className="relative">
-          <RenderTextfield type='password' control={control} error={errors.password} name='password' placeholder='Password' label='password' />
+          <RenderTextfield type='password' control={control} error={errors?.password} name='password' placeholder='Password' label='password' />
           <a
             href="#"
             className="absolute top-0 right-0 text-xs text-gray-500 hover:underline"
@@ -65,7 +65,7 @@ export default function LoginForm({
       </form>
       <p className="text-center text-xs text-gray-500">
         Don’t have an account?
-        <a href="#" className="text-primary-blue hover:underline font-semibold">
+        <a href="#" className="text-primary-blue hover:underline font-semibold pl-1">
           Sign up
         </a>
       </p>

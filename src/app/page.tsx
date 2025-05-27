@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import LoginForm from './components/LoginForm/LoginForm';
-import { FormValues } from "@/app/types/general";
+import LoginForm from '../components/LoginForm/LoginForm';
+import { FormValues } from "@/types/general";
 
 export default function LoginPage() {
   const router = useRouter();
