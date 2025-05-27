@@ -1,29 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import LoginForm from '../components/LoginForm/LoginForm';
-import { FormValues } from "@/types/general";
 
-export default function LoginPage() {
+export default function AppPage() {
   const router = useRouter();
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  useEffect(() => {
+    router.push('/login')
+  }, [])
 
-  const handleLogin = async (data: FormValues) => {
-    setIsSubmitting(true);
-    try {
-      await new Promise((r) => setTimeout(r, 500));
-      router.push("/");
-    } catch (err) {
-      console.error(err);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  return (
-    <div className="min-h-screen bg-gray-900 flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <LoginForm onSubmit={handleLogin} isSubmitting={isSubmitting} />
-    </div>
-  );
 }
