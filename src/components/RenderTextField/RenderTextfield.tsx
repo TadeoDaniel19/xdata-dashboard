@@ -1,6 +1,6 @@
-"use client";
-import { Controller } from "react-hook-form";
-import { ControlledInputProps } from "@/types/general";
+'use client';
+import { Controller } from 'react-hook-form';
+import { ControlledInputProps } from '@/types/general';
 import { TextField } from '../TextField/TextField';
 
 export function RenderTextfield({
@@ -12,7 +12,7 @@ export function RenderTextfield({
   error,
 }: ControlledInputProps) {
   return (
-    <div className="w-full">
+    <div className='w-full'>
       <Controller
         name={name}
         control={control}
@@ -25,9 +25,7 @@ export function RenderTextfield({
           />
         )}
       />
-      {error && (
-        <p className="text-xs text-red-600 mt-1">{error.message}</p>
-      )}
+      {error && <p className='text-xs text-red-600 mt-1'>{error.message}</p>}
     </div>
   );
 }
