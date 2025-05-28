@@ -9,12 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
+        background: '#F7F8FC',
         foreground: 'var(--foreground)',
         'input-bg': '#FCFDFE',
         'input-border': '#F0F1F7',
         'primary-blue': '#3751FF',
-        'primary-gray': '#A4A6B3'
+        'primary-gray': '#A4A6B3',
+        'gray-label': '#9FA2B4'
       },
     },
   },
