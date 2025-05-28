@@ -5,13 +5,15 @@ import { StatsCard } from '../StatsCard/StatsCard';
 
 export default function ChartStatsSection({ stats }: IChartProps) {
   return (
-    <div className='bg-white border border-gray-200 rounded-lg overflow-hidden'>
-      <div className='grid grid-cols-1 md:grid-cols-7 items-stretch'>
-        <div className='col-span-1 md:col-span-5 p-6'>
-          <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center mb-6'>
-            <div className='space-y-1'>
-              <h2 className='text-xl font-bold text-black'>Today’s trends</h2>
-              <p className='text-lg text-gray-500'>
+    <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-7 items-stretch">
+        <div className="col-span-1 md:col-span-5 p-6">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-6">
+            <div className="space-y-1">
+              <h2 className="text-xl font-bold text-black">
+                Today’s trends
+              </h2>
+              <p className="text-lg text-gray-500">
                 as of 25 May 2019, 09:41 PM
               </p>
             </div>
@@ -37,20 +39,14 @@ export default function ChartStatsSection({ stats }: IChartProps) {
             />
           </div>
         </div>
-        <div
-          className='hidden md:flex flex-col justify-between
+        <div className="hidden md:flex flex-col justify-between
             col-span-1 md:col-span-2
             border-t border-gray-200
             md:border-t-0 md:border-l
-            p-6'
-        >
-          {stats.map((stat, idx) => (
-            <StatsCard
-              stat={stat}
-              hasDivider={idx < stats.length - 1}
-              key={stat.label}
-            />
-          ))}
+            p-6">
+            {stats.map((stat, idx) => (
+              <StatsCard stat={stat} hasDivider={idx < stats.length - 1} key={stat.label} />
+            ))}
         </div>
       </div>
     </div>
