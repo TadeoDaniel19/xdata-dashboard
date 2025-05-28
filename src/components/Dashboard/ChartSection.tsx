@@ -1,7 +1,7 @@
 'use client';
-import Image from "next/image";
+import Image from 'next/image';
 import { IChartProps } from '../../types/general';
-import { StatsCard } from "../StatsCard/StatsCard";
+import { StatsCard } from '../StatsCard/StatsCard';
 
 export default function ChartStatsSection({ stats }: IChartProps) {
   return (
@@ -17,25 +17,25 @@ export default function ChartStatsSection({ stats }: IChartProps) {
                 as of 25 May 2019, 09:41 PM
               </p>
             </div>
-            <div className="mt-4 lg:mt-0 flex items-center space-x-6">
-              <div className="flex items-center space-x-1">
-                <span className="block w-6 h-[4px] bg-primary-blue rounded-full" />
-                <span className="text-lg text-gray-500">Today</span>
+            <div className='mt-4 lg:mt-0 flex items-center space-x-6'>
+              <div className='flex items-center space-x-1'>
+                <span className='block w-6 h-[4px] bg-primary-blue rounded-full' />
+                <span className='text-lg text-gray-500'>Today</span>
               </div>
-              <div className="flex items-center space-x-1">
-                <span className="block w-6 h-[4px] bg-gray-300 rounded-full" />
-                <span className="text-lg text-gray-500">Yesterday</span>
+              <div className='flex items-center space-x-1'>
+                <span className='block w-6 h-[4px] bg-gray-300 rounded-full' />
+                <span className='text-lg text-gray-500'>Yesterday</span>
               </div>
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-lg">
+          <div className='overflow-hidden rounded-lg'>
             <Image
-              src="/dashboard.png"
-              alt="Trends chart"
+              src='/dashboard.png'
+              alt='Trends chart'
               width={700}
               height={300}
-              className="w-full h-auto"
+              className='w-full h-auto'
             />
           </div>
         </div>

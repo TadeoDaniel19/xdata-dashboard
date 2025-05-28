@@ -1,13 +1,13 @@
 'use client';
-import Image from "next/image";
-import React from "react";
-import { IAvatarProps } from "@/types/general";
+import Image from 'next/image';
+import React from 'react';
+import { IAvatarProps } from '@/types/general';
 
 export function Avatar({
   src,
-  alt = "Avatar",
+  alt = 'Avatar',
   size = 32,
-  className = "",
+  className = '',
 }: IAvatarProps) {
   return (
     <div
@@ -19,7 +19,7 @@ export function Avatar({
         alt={alt}
         width={size}
         height={size}
-        className="object-cover"
+        className='object-cover'
       />
     </div>
   );

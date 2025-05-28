@@ -15,7 +15,7 @@ const config: Config = {
         'input-border': '#F0F1F7',
         'primary-blue': '#3751FF',
         'primary-gray': '#A4A6B3',
-        'gray-label': '#9FA2B4'
+        'gray-label': '#9FA2B4',
       },
     },
   },
